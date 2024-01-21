@@ -1,10 +1,32 @@
+// swapiService.js
+
 import axios from 'axios';
 
-const baseURL = 'https://swapi.dev/api/';
+const BASE_URL = 'https://swapi.dev/api/people/';
 
-const swapiService = axios.create({
-    baseURL,
-});
+export const getCharacters = async (page) => {
+  try {
+    const response = await axios.get(`${BASE_URL}?page=${page}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
-export const getCharacters = (page) => swapiService.get(`people/?page=${page}`);
-export const getCharacterId = (id) => swapiService.get(`people/${id}`);
+export const searchCharacters = async (term) => {
+  try {
+    const response = await axios.get(`${BASE_URL}?search=${term}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const getCharacterById = async (id) => {
+  try {
+    const response = await axios.get(`${BASE_URL}${id}/`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};

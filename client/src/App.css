@@ -24,8 +24,83 @@
   color: white;
 }
 
+.Encyclopedia {
+  margin-left: 20px;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.Encyclopedia input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 60%;
+  align-items: center;
+  align-content: center;
+}
+
+.CharacterDetails {
+  margin-left: 20px;
+}
+
+.CharacterDetails img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.Title-Home {
+  text-align: center;
+  color: #10121a;
+}
+
+.Boton-Next {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.Boton-Previous {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.Boton-Next:hover {
+  background-color: #0056b3;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+/* En tu archivo de estilos (App.css o similar) */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-number {
+  margin: 0 5px;
+}
+
+.pagination-number a {
+  text-decoration: none;
+  color: #333; /* Ajusta el color según tu diseño */
+  padding: 5px 10px;
+  border: 1px solid #ccc; /* Ajusta el borde según tu diseño */
+  border-radius: 5px; /* Ajusta el redondeo de los bordes según tu diseño */
+}
+
+.pagination-number a:hover {
+  background-color: #f0f0f0; /* Ajusta el color de fondo al pasar el ratón según tu diseño */
+}
+
+.active {
+  font-weight: bold; /* Ajusta el peso de la fuente para la página activa según tu diseño */
 }
 
 @keyframes App-logo-spin {

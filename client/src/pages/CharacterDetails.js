@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getCharacterById } from '../services/swapiService';
+import { getCharacterById } from '../services/swapiService.js';
+import '../../../client/src/App.css';
 
 const CharacterDetail = () => {
   const { id } = useParams();
@@ -10,7 +11,7 @@ const CharacterDetail = () => {
     const fetchCharacterDetail = async () => {
       try {
         const response = await getCharacterById(id);
-        setCharacter(response.data);
+        setCharacter(response);
       } catch (error) {
         console.error('Error fetching character detail:', error);
       }
@@ -20,13 +21,15 @@ const CharacterDetail = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className='CharacterDetails'>
       <h2>Character Detail</h2>
       {character && (
         <div>
           <h3>{character.name}</h3>
           <p>Height: {character.height}</p>
           <p>Gender: {character.gender}</p>
+          <p>Birth Year: {character.birth_year}</p>
+          <p>Mass: {character.mass}</p>
           {/* Add more details as needed */}
         </div>
       )}
