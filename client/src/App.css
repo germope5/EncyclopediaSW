@@ -208,3 +208,25 @@
 .contacto-title:hover {
   color:#b455c5;
 }
+
+/* Reglas de medios para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+  .FiltroB input {
+    width: 80%; /* Ajusta el ancho del campo de búsqueda */
+  }
+
+  .character-item {
+    width: 48%; /* Ajusta el ancho de los elementos de la lista */
+  }
+}
+
+/* Reglas de medios para pantallas de hasta 576px de ancho */
+@media (max-width: 576px) {
+  .FiltroB input {
+    width: 100%; /* Ajusta el ancho del campo de búsqueda para pantallas más pequeñas */
+  }
+
+  .character-item {
+    width: 100%; /* Ajusta el ancho de los elementos de la lista para pantallas más pequeñas */
+  }
+}
