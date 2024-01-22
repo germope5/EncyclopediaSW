@@ -1,44 +1,93 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .Encyclopedia {
   margin-left: 20px;
-  text-align: center; /* Centra el contenido horizontalmente */
+
 }
 
-.Encyclopedia input {
+.FiltroB input {
+  margin: 0 auto; /* Alinear horizontalmente */
   margin-bottom: 10px;
   padding: 8px;
-  width: 60%;
+  width: 40%;
+  border-radius: 30px;
+  border-color: #0056b3;
+  height: 30px;
+
+}
+
+.FiltroB {
+  margin: '0 auto';
+  align-content: 'center';
   align-items: center;
-  align-content: center;
+}
+
+/* Estilo para el placeholder */
+.FiltroB input::placeholder {
+  color: #666; /* Color del placeholder */
+  font-style: italic; /* Estilo de fuente del placeholder */
+  font-size: 14px;
+}
+
+/* Estilos para la lista ul */
+.list-characters {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* O ajusta según tus necesidades */
+}
+
+.character-name {
+  margin-top: 10px; /* Ajusta según el espacio que desees entre la imagen y el nombre */
+  text-align: center;
+}
+
+.character-item {
+  width: 18%; /* Ancho ajustado para 5 elementos por fila, ajusta según tus necesidades */
+  margin: 10px; /* Márgenes entre elementos, ajusta según tus necesidades */
+  text-align: center;
+}
+
+.list-characters li {
+  margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+  text-align: center;
+}
+
+.list-characters li a {
+  text-decoration: none; /* Quita la decoración de enlace */
+  color: #007bff; /* Color del texto del enlace */
+  font-weight: bold; /* Peso de la fuente del enlace */
+  font-size: 16px; /* Tamaño de la fuente del enlace */
+}
+
+.list-characters li a:hover {
+  color: #0906c4; /* Cambia el color del texto al pasar el ratón */
+}
+
+.esquina-superior-izquierda {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100px; /* ajusta según el tamaño de tu imagen */
+  height: 100px; /* ajusta según el tamaño de tu imagen */
+  cursor: pointer;
+}
+
+.esquina-superior-derecha {
+  position: absolute; /* Puedes cambiar a 'absolute' o 'relative' según tus necesidades */
+  top: 0;
+  right: 20px;
+  width: 100px; /* ajusta según el tamaño de tu imagen */
+  height: 100px; /* ajusta según el tamaño de tu imagen */
+  cursor: pointer;
 }
 
 .CharacterDetails {
   margin-left: 20px;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .CharacterDetails img {
@@ -49,8 +98,11 @@
 
 .Title-Home {
   text-align: center;
-  color: #10121a;
+  color: whitesmoke;
+  margin-top: 80px;
+
 }
+
 
 .Boton-Next {
   background-color: #007bff;
@@ -81,6 +133,7 @@
 .pagination-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
 }
 
 .pagination-number {
@@ -89,25 +142,34 @@
 
 .pagination-number a {
   text-decoration: none;
-  color: #333; /* Ajusta el color según tu diseño */
+  color: whitesmoke; /* Ajusta el color según tu diseño */
   padding: 5px 10px;
   border: 1px solid #ccc; /* Ajusta el borde según tu diseño */
   border-radius: 5px; /* Ajusta el redondeo de los bordes según tu diseño */
+  
 }
 
 .pagination-number a:hover {
-  background-color: #f0f0f0; /* Ajusta el color de fondo al pasar el ratón según tu diseño */
+  background-color: #0056b3; /* Ajusta el color de fondo al pasar el ratón según tu diseño */
+  color:  whitesmoke;
+  border-color: solid 3px#181818;
 }
 
-.active {
-  font-weight: bold; /* Ajusta el peso de la fuente para la página activa según tu diseño */
+.footer-style {
+  
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  box-shadow: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-character {
+  width: 90%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 250px;
+  margin-bottom: 10px;
+  image-rendering: pixelated;    
 }
+
