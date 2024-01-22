@@ -12,7 +12,7 @@
   padding: 8px;
   width: 40%;
   border-radius: 30px;
-  border-color: #0056b3;
+  border-color:#b455c5;
   height: 30px;
 
 }
@@ -57,13 +57,13 @@
 
 .list-characters li a {
   text-decoration: none; /* Quita la decoración de enlace */
-  color: #007bff; /* Color del texto del enlace */
+  color: whitesmoke; /* Color del texto del enlace */
   font-weight: bold; /* Peso de la fuente del enlace */
   font-size: 16px; /* Tamaño de la fuente del enlace */
 }
 
 .list-characters li a:hover {
-  color: #0906c4; /* Cambia el color del texto al pasar el ratón */
+  color: #b455c5; /* Cambia el color del texto al pasar el ratón */
 }
 
 .esquina-superior-izquierda {
@@ -104,26 +104,7 @@
 }
 
 
-.Boton-Next {
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-}
 
-.Boton-Previous {
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.Boton-Next:hover {
-  background-color: #0056b3;
-}
 
 .App-link {
   color: #61dafb;
@@ -150,7 +131,7 @@
 }
 
 .pagination-number a:hover {
-  background-color: #0056b3; /* Ajusta el color de fondo al pasar el ratón según tu diseño */
+  background-color:#b455c5; /* Ajusta el color de fondo al pasar el ratón según tu diseño */
   color:  whitesmoke;
   border-color: solid 3px#181818;
 }
@@ -171,6 +152,59 @@
   height: 80%;
   margin-bottom: 10px;
   border-radius: 20px;
+  border: 2px solid transparent; /* Establece el ancho y color del borde inicialmente como transparente */
   /* image-rendering: pixelated;     */
 }
 
+.img-character:hover {
+  border: 2px solid#b455c5;
+}
+
+
+
+.characterImagen {
+  width: 20%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 80%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  /* image-rendering: pixelated;     */
+
+}
+
+.cd-title {
+  font-size: 36px;
+}
+
+.swapi-title {
+  color: whitesmoke;
+}
+
+.swapi-title:hover {
+  color:#b455c5;
+}
+
+.enlaceSWAPI {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.enlaceSWAPI:hover {
+  color:#b455c5;
+}
+
+.enlaceCon {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.enlaceCon:hover {
+  color:#b455c5;
+}
+
+.contacto-title {
+  color: whitesmoke;
+}
+
+.contacto-title:hover {
+  color:#b455c5;
+}
