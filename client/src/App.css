@@ -167,9 +167,10 @@
 }
 
 .img-character {
-  width: 90%; /* La imagen ocupa todo el ancho del contenedor */
-  height: 250px;
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 80%;
   margin-bottom: 10px;
-  image-rendering: pixelated;    
+  border-radius: 20px;
+  /* image-rendering: pixelated;     */
 }
 
